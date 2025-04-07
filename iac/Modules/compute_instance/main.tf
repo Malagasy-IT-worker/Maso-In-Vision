@@ -1,15 +1,15 @@
 
 resource "google_compute_instance" "main_server" {
-  name         = "MIV-SERVER"
-  machine_type = "custom-4-32768"
-  zone         = "africa-south1-a"
+  name         = var.instance_name
+  machine_type = var.instance_type
+  zone         = var.zone
 
   tags = ["http-server"]
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
-      size  = 50 
+      image = var.instance_image
+      size  = var.instance_disk_size 
     }
   }
 
