@@ -1,3 +1,4 @@
-output "instance_ip" {
-    value = [for i in google_compute_instance.vm_instance: i.network_interface[0].access_config[0].nat_ip  ]
+output "MIV-SERVER-IP" {
+  description = "value of MIV server ip"
+  value       = module.compute_instance.public_ip
 }
