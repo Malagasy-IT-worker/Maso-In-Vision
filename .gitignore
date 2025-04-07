@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+iac/.terraform*
+
+
 # C extensions
 *.so
 models/yolo11x.pt
