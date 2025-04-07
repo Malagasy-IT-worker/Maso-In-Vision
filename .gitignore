@@ -5,6 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
+models/yolo11x.pt
+.venv
 
 # Distribution / packaging
 .Python
@@ -172,3 +174,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+iac/credentials.json
+iac/Keys
