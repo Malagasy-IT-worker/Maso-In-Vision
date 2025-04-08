@@ -1,5 +1,5 @@
 
-resource "google_compute_instance" "main_server" {
+resource "google_compute_instance" "vm_instance" {
   name         = var.instance_name
   machine_type = var.instance_type
   zone         = var.zone
@@ -9,13 +9,13 @@ resource "google_compute_instance" "main_server" {
   boot_disk {
     initialize_params {
       image = var.instance_image
-      size  = var.instance_disk_size 
+      size  = var.instance_disk_size
     }
   }
 
   network_interface {
     network       = "default"
-    access_config {} 
+    access_config {}
   }
 
   metadata = {
