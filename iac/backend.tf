@@ -1,6 +1,8 @@
 terraform {
   backend "gcs" {
-    bucket = "ankoay-storage"
+    bucket = "miv-storage"
     prefix = "terraform-state"
+    credentials = "./credentials.json"
   }
 }
+#
