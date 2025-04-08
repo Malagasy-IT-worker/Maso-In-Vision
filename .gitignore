@@ -3,7 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-iac/.terraform*
 
 
 # C extensions
@@ -86,6 +85,10 @@ target/
 # IPython
 profile_default/
 ipython_config.py
+
+#terraform files
+iac/terraform*
+iac/.terraform*
 
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
