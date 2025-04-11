@@ -1,0 +1,17 @@
+license-plate-recognition/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   └── utils.py
+│   ├── Dockerfile
+│   └── requirements.txt
+├── frontend/
+│   ├── ...
+├── models/
+│   └── license_plate/
+│       └── best.pt
+|   └── yolo
+|       └── yolovx.pt
+|   
+└── docker-compose.yml
