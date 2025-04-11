@@ -16,8 +16,8 @@ class DetectionResult(BaseModel):
     image: str  # Base64 encoded image
 
 # Modèles préchargés
-vehicle_model = YOLO('../../models/yolo/yolov8x.pt')
-plate_model = YOLO('../../models/license_plate/license_plate_detector.pt')
+vehicle_model = YOLO('../models/yolo/yolov8x.pt')
+plate_model = YOLO('../models/license_plate/license_plate_detector.pt')
 reader = easyocr.Reader(['en'])
 
 def get_vehicle_type(class_id):
