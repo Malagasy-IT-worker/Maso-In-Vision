@@ -1,7 +1,7 @@
 backend/app/__pycache__
 backend/models/yolo/
 
-
+iac/Environments/ansible/hosts*
 
 # C extensions
 *.so
