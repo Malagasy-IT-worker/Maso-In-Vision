@@ -13,9 +13,8 @@ class DetectionResult(BaseModel):
     vehicle_type: str
     license_plate: str
     confidence: float
-    image: str  # Base64 encoded image
+    image: str 
 
-# Modèles préchargés
 vehicle_model = YOLO('../models/yolo/yolov8x.pt')
 plate_model = YOLO('../models/license_plate/license_plate_detector.pt')
 reader = easyocr.Reader(['en'])

@@ -13,8 +13,8 @@ def preprocess_plate(plate_img):
 def validate_plate(text):
     cleaned = re.sub(r'[^A-Z0-9]', '', text.upper())
     patterns = [
-        r'^[A-Z]{2}\d{2}[A-Z]{2}\d{4}$',  # Format Français
-        r'^[A-Z]{3}\d{3}$',               # Format Allemand
-        r'^\d{2}-[A-Z]{3}-\d{2}$'         # Format Néerlandais
+        r'^[A-Z]{2}\d{2}[A-Z]{2}\d{4}$', 
+        r'^[A-Z]{3}\d{3}$',              
+        r'^\d{2}-[A-Z]{3}-\d{2}$'         
     ]
     return any(re.match(p, cleaned) for p in patterns)
